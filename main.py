@@ -28,15 +28,15 @@ def no_puppies_allowed(lst):
 
 no_pups = no_puppies_allowed(contestants)
 
-# def list_to_dict(lst1, lst2):
-#     for i in lst1:
-#         new_dict = dict(zip(lst2, i))
-#         parent_list_2.append(new_dict)
-#     return parent_list_2
+def list_to_dict(lst1, lst2):
+    for i in lst1:
+        new_dict = dict(zip(lst2, i))
+        parent_list_2.append(new_dict)
+    return parent_list_2
 
-# # print(list_to_dict(no_pups, labels))
+# print(list_to_dict(no_pups, labels))
 
-# dict_created = list_to_dict(no_pups, labels)
+dict_created = list_to_dict(no_pups, labels)
 
 
 
