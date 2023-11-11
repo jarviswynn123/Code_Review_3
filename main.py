@@ -54,45 +54,15 @@ points_assigned = assign_points(dict_created)
 
 
 # def most_points(lst):
-#     for i in lst:
-#         list_items = (list(i.items()))
-#         for j in list_items:
-#             print(max(j))
+#     print(lst)
+        
        
 
 # most_points(points_assigned)
-    
-    
 
 
 
 
-
-
-
-
-
-
-
-
-
-
-# def assign_points():
-#     for element in dict1:
-#         dict1["points"] = len(dict1["other_talents"])
-#         print(dict1)
-#         # if dict1["does_tricks"] == True:
-#         #     dict1["points"] += 1
-#             # print(dict1)
-# assign_points()
-
-
-# def assign_points():
-#     dict1["points"] = 0
-#     for element in dict1:
-#         dict1['points'] += len(dict1['other_talents'])
-#         return (dict1["points"])
-# assign_points()
 
 
 
