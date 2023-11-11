@@ -40,17 +40,17 @@ dict_created = list_to_dict(no_pups, labels)
 
 
 
-# def assign_points(lst):
-#     for i in lst:
-#         i["points"] = 0
-#         if i["does_tricks"] == True:
-#             i["points"] += 1
-#         i["points"] += len(i["other_talents"])
-#         parent_list_3.append(i)
-#     return parent_list_3
-# # print(assign_points(dict_created))
+def assign_points(lst):
+    for i in lst:
+        i["points"] = 0
+        if i["does_tricks"] == True:
+            i["points"] += 1
+        i["points"] += len(i["other_talents"])
+        parent_list_3.append(i)
+    return parent_list_3
+# print(assign_points(dict_created))
 
-# points_assigned = assign_points(dict_created)
+points_assigned = assign_points(dict_created)
 
 
 # def most_points(lst):
