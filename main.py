@@ -20,11 +20,11 @@ parent_list_3 = []
 
 def no_puppies_allowed(lst):
     for element in lst:
-        if element[1] > 1: #The loop stops at the first item and does not return all 
+        if element[1] > 1:
             parent_list.append(element)
     return parent_list
 
-# no_puppies_allowed(contestants)
+
 
 no_pups = no_puppies_allowed(contestants)
 
@@ -34,7 +34,7 @@ def list_to_dict(lst1, lst2):
         parent_list_2.append(new_dict)
     return parent_list_2
 
-# print(list_to_dict(no_pups, labels))
+
 
 dict_created = list_to_dict(no_pups, labels)
 
@@ -48,17 +48,32 @@ def assign_points(lst):
         i["points"] += len(i["other_talents"])
         parent_list_3.append(i)
     return parent_list_3
-# print(assign_points(dict_created))
+
 
 points_assigned = assign_points(dict_created)
 
 
-# def most_points(lst):
-#     print(lst)
-        
-       
 
-# most_points(points_assigned)
+
+def most_points(lst):
+    for i in lst:
+        max_points = 0
+        winning_dog = None
+        if i["points"] > max_points:
+            max_points = i["points"]
+            winning_dog = i["name"]
+        return winning_dog
+
+winner_winner_chicken_dinner = most_points(points_assigned)
+
+def main(*args):
+    no_pups = no_puppies_allowed(contestants)
+    dict_created = list_to_dict(no_pups, labels)
+    points_assigned = assign_points(dict_created)
+    return f"Congratulations {most_points(points_assigned)}, You have won this contest!"
+
+print(main(contestants,labels))
+
 
 
 
