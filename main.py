@@ -72,7 +72,7 @@ def main(*args):
     points_assigned = assign_points(dict_created)
     return f"Congratulations {most_points(points_assigned)}, You have won this contest!"
 
-print(main(contestants,labels))
+main(contestants,labels)
 
 
 
