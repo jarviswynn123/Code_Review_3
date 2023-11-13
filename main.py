@@ -56,22 +56,23 @@ points_assigned = assign_points(dict_created)
 
 
 def most_points(lst):
+    max_points = 0
+    winning_dog = None
     for i in lst:
-        max_points = 0
-        winning_dog = None
         if i["points"] > max_points:
             max_points = i["points"]
             winning_dog = i["name"]
-        return winning_dog
+    return winning_dog
 
 winner_winner_chicken_dinner = most_points(points_assigned)
+
+
 
 def main(*args):
     no_pups = no_puppies_allowed(contestants)
     dict_created = list_to_dict(no_pups, labels)
     points_assigned = assign_points(dict_created)
     return f"Congratulations {most_points(points_assigned)}, You have won this contest!"
-
 main(contestants,labels)
 
 
